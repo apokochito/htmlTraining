@@ -26,3 +26,5 @@
 
 
     > https://htmldog.com/guides/html/advanced/
+    
+    > https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
