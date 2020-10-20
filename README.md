@@ -10,7 +10,6 @@
 6. Marking up text: Headings, Paragraphs, Lists
 7. Links
 
-
     > https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
 
 - Advanced (from htmldog.com and developer.mozila.org)
@@ -23,7 +22,6 @@
 6. HTML5 Forms Pt. 1
 7. HTML5 Forms Pt. 2
 8. Embedded Content
-
 
     > https://htmldog.com/guides/html/advanced/
     
