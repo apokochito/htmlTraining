@@ -4,13 +4,190 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      td {
+        border: double;
+      }
+      .mySpecificColumn {
+        background-color: gray;
+      }
+      .alternative {
+        background-color: aqua;
+      }
+    </style>
   </head>
 
   <body>
     <h3>HTML is not a programming language, it's a markup languange</h3>
     <hr>
-    <h4>Text: Time, Mark, and “Presentational”</h4>
+    <h4>Embedded Content: Video, Audio, and Canvas</h4>
     <div style="padding-left: 5%;">
-    </div>
+      <h4>Example : The Columns Strike Back</h4>
+      <table>
+        <colgroup>
+            <col>
+            <col class="mySpecificColumn">
+            <col>
+        </colgroup>
+        <tr>
+            <td>This</td>
+            <td>That</td>
+            <td>The other</td>
+        </tr>
+        <tr>
+            <td>Ladybird</td>
+            <td>Locust</td>
+            <td>Lunch</td>
+        </tr>
+    </table>
+    <table>
+        <colgroup>
+            <col span="3" class="alternative">
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <td>This</td>
+            <td>That</td>
+            <td>The other</td>
+        </tr>
+        <tr>
+            <td>Ladybird</td>
+            <td>Locust</td>
+            <td>Lunch</td>
+        </tr>
+    </table>
+    <h4>HTML Code</h4>
+    <pre>
+      &lt;table&gt;
+        &lt;colgroup&gt;
+          &lt;col&gt;
+          &lt;col class="mySpecificColumn"&gt;
+          &lt;col&gt;
+        &lt;/colgroup&gt;
+        &lt;tr&gt;
+          &lt;td&gt;This&lt;/td&gt;
+          &lt;td&gt;That&lt;/td&gt;
+          &lt;td&gt;The other&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Ladybird&lt;/td&gt;
+          &lt;td&gt;Locust&lt;/td&gt;
+          &lt;td&gt;Lunch&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    </pre>
+    <pre>
+      &lt;table&gt;
+        &lt;colgroup&gt;
+          &lt;col&gt;
+          &lt;col span="3" class="alternative"&gt;
+          &lt;col&gt;
+        &lt;/colgroup&gt;
+        &lt;tr&gt;
+          &lt;td&gt;This&lt;/td&gt;
+          &lt;td&gt;That&lt;/td&gt;
+          &lt;td&gt;The other&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Ladybird&lt;/td&gt;
+          &lt;td&gt;Locust&lt;/td&gt;
+          &lt;td&gt;Lunch&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    </pre>
+    <h4>Description</h4>
+    <p>These tags allow you to define the table columns and style them as desired, which is particularly useful if you want certain columns aligned or colored differently.</p> 
+    <p>If you use span in colgroup tag, you shouldn’t then use col tags.</p>  
+    <h4>Styles</h4>
+    <pre>
+      td {
+        border: double;
+      }
+      .mySpecificColumn {
+        background-color: gray;
+      }
+      .alternative {
+        background-color: aqua;
+      }
+    </pre>
+    <h4>Example : Caption interlude</h4>
+    <table>
+      <caption>Fruits</caption>
+      <tr>
+          <td>Lemon</td>
+          <td>Apple</td>
+      </tr>
+      <tr>
+          <td>Orange</td>
+          <td>Grape</td>
+      </tr>
+  </table>
+  <h4>HTML Code</h4>
+  <pre>
+    &lt;table&gt;
+      &lt;caption&gt;Fruits&lt;/caption&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Lemon&lt;/td&gt;
+        &lt;td&gt;Apple&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Orange&lt;/td&gt;
+        &lt;td&gt;Grape&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  </pre>
+    <h4>Description</h4>
+    <p>A brief and easy accessibility consideration is to apply a caption to the table.</p>
+    <p>The caption element defines the caption and should be used straight after the opening table tag.</p>
+    <p>The mightier <b>figcaption</b> would be preferable to caption if you are marking up a table as the sole content of a figure element.</p>
+    <h4>Example : Headers and Footers</h4>
+    <table>
+      <thead>
+          <tr>
+              <td>Header 1</td>
+              <td>Header 2</td>
+          </tr>
+      </thead>
+      <tfoot>
+          <tr>
+              <td>Footer 1</td>
+              <td>Footer 2</td>
+          </tr>
+      </tfoot>
+      <tbody>
+          <tr>
+              <td>Cell 1</td>
+              <td>Cell 2</td>
+          </tr>
+          <!-- etc. -->
+      </tbody>
+    </table>
+    <h4>HTML Code</h4>
+    <pre>
+      &lt;table&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Header 1&lt;/td&gt;
+            &lt;td&gt;Header 2&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tfoot&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Footer 1&lt;/td&gt;
+            &lt;td&gt;Footer 2&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tfoot&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Cell 1&lt;/td&gt;
+            &lt;td&gt;Cell 2&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+    </pre>
+    <h4>Description</h4>
+    <p>thead, tfoot and tbody allow you to separate the table into header, footer and body, which can be handy when dealing with larger tables.</p>    
+  </div>
   </body>
 </html>
