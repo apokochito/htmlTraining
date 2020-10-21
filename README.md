@@ -1,6 +1,6 @@
 # HTMLTraining
 
-- Basics (from developer.mozila.org)
+### Basics (from developer.mozila.org)
 
 1. Anatomy of an HTML element
 2. Nesting elements
@@ -10,9 +10,9 @@
 6. Marking up text: Headings, Paragraphs, Lists
 7. Links
 
-    > https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
+   > https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
 
-- Advanced (from htmldog.com and developer.mozila.org)
+### Advanced (from htmldog.com and developer.mozila.org)
 
 1. Text: Time, Mark, and “Presentational”
 2. Conditional Comments
@@ -23,6 +23,6 @@
 7. HTML5 Forms Pt. 2
 8. Embedded Content
 
-    > https://htmldog.com/guides/html/advanced/
-    
-    > https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+   > https://htmldog.com/guides/html/advanced/
+
+   > https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
