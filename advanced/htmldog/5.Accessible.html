@@ -11,6 +11,87 @@
     <hr>
     <h4>Accessible Forms</h4>
     <div style="padding-left: 5%;">
+      <h4>Example : Labels</h4>
+      <form>
+        <label for="yourName">Your Name</label>
+        <input name="yourName" id="yourName">
+      </form>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;form&gt;
+          &lt;label for="yourName"&gt; Your Name &lt;/label&gt;
+          &lt;input name="yourName" id="yourName"&gt;
+        &lt;/form&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>Each form field should have its own explicit label. The label tag sorts this out, with a for attribute that associates it to a form element.</p>
+      
+      <h4>Example : Field sets and legends</h4>
+      <form action="somescript.php" >
+        <fieldset>
+            <legend>Name</legend>
+            <p>First name <input name="firstName"></p>
+            <p>Last name <input name="lastName"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <p>Address <textarea name="address"></textarea></p>
+            <p>Postal code <input name="postcode"></p>
+        </fieldset>
+      </form>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;form&gt;
+          &lt;fieldset&gt;
+            &lt;legend&gt; Name &lt;/legend&gt;
+            &lt;p&gt; First name &lt;input name="firstName"&gt;&lt;/p&gt;
+            &lt;p&gt; Last name &lt;input name="lastName"&gt;&lt;/p&gt;
+          &lt;/fieldset&gt;
+          &lt;fieldset&gt;
+            &lt;legend&gt; Address &lt;/legend&gt;
+            &lt;p&gt; Address &lt;textarea name="address"&gt;&lt;/textarea&gt;
+            &lt;p&gt; Postal code &lt;input name="postcode"&gt;&lt;/p&gt;
+          &lt;/fieldset&gt;
+        &lt;/form&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>You can group fields using the fieldset tag, and you can set a caption with the legend tag.</p>
+
+      <h4>Example : Option groups</h4>
+      <select name="country">
+        <optgroup label="Africa">
+            <option value="gam">Gambia</option>
+            <option value="mad">Madagascar</option>
+        </optgroup>
+        <optgroup label="Europe">
+            <option value="fra">France</option>
+            <option value="rus">Russia</option>
+        </optgroup>
+      </select>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;select name="country"&gt;
+          &lt;optgroup label="Africa"&gt;
+            &lt;option value="gam"&gt; Gambia &lt;/option&gt;
+            &lt;option value="mad"&gt; Madagascar &lt;/option&gt;
+          &lt;/optgroup&gt;
+          &lt;optgroup label="Europe"&gt;
+            &lt;option value="fra"&gt; France &lt;/option&gt;
+            &lt;option value="rus"&gt; Russia &lt;/option&gt;
+          &lt;/optgroup&gt;
+        &lt;/select&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>The optgroup element groups options in a select box.</p>
+
+      <h4>Example : Navigating fields</h4>
+      <input name="firstName" accesskey="e" tabindex="1">
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;input name="firstName" accesskey="e" tabindex="1"&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>Form fields (and field sets) need to be navigated to without the use of a pointing device, such as a mouse.</p>
     </div>
   </body>
 </html>
