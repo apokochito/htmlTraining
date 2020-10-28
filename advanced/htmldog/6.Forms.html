@@ -11,6 +11,70 @@
     <hr>
     <h4>HTML5 Forms Pt. 1: Input Types</h4>
     <div style="padding-left: 5%;">
+      <h4>Example : Search</h4>
+      <input type="search" name="search">
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;input type="search" name="search"&gt;
+        
+        - Styles -
+        input[type=search] { background: url(magnifyingglass.png) right no-repeat) }
+      </pre>
+      <h4>Description</h4>
+      <p>Used for a search query text box, this performs exactly as a standard text input should.</p>
+      <p>You can also target this element with a CSS attribute selector</p>
+
+      <h4>Example : Telephone, URL, and email addresses</h4>
+      <input type="tel" name="telephone_number">
+      <input type="url" name="web_address">
+      <input type="email" name="email_address">
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;input type="tel" name="telephone_number"&gt;
+        &lt;input type="url" name="web_address"&gt;
+        &lt;input type="email" name="email_address"&gt;
+        
+        - Styles -
+        input[type=email]:valid { background: green }
+        input[type=email]:invalid { background: red }
+      </pre>
+      <h4>Description</h4>
+      <p>Other “special” text input types include tel, for telephone numbers, url, for web addresses, and email, for email addresses.</p>
+      <p>You can use the :valid and :invalid CSS3 pseudo classes to style these fields depending on whether their content is considered valid.</p>
+
+      <h4>Example : Numbers and ranges</h4>
+      <input type="number" name="quantity" step="2" min="20" max="30">
+      <input type="range" name="temperature" min="15" max="25" step="0.5" value="18.5">
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;input type="number" name="quantity" step="2" min="20" max="30"&gt;
+        &lt;input type="range" name="temperature" min="15" max="25" step="0.5" value="18.5"&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>A simple text box that also allows a user to directly type in a number, or cycle through numbers (usually using an up and down arrow to the side of the field), can be achieved with type="number".</p>
+      <p>You can use the :valid and :invalid pseudo classes in relation to this, too.</p>
+
+      <h4>Example : Dates, times and color</h4>
+      <input type="datetime" name="quantity">
+      <input type="date" name="quantity">
+      <input type="month" name="quantity">
+      <input type="week" name="quantity">
+      <input type="time" name="quantity">
+      <input type="datetime-local" name="quantity">
+      <input name="color" type="color" value="#ff8800">
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;input type="datetime" name="quantity"&gt;
+        &lt;input type="date" name="quantity"&gt;
+        &lt;input type="month" name="quantity"&gt;
+        &lt;input type="week" name="quantity"&gt;
+        &lt;input type="time" name="quantity"&gt;
+        &lt;input type="datetime-local" name="quantity"&gt;
+        &lt;input name="color" type="color" value="#ff8800"&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>step, min, and max attributes can be used with dates and times, too, as can the CSS pseudo classes to style according to validity.</p>
+      <p>type="color" is designed to allow a user to select a color, sending a six-digit hex code as its value.</p>
     </div>
   </body>
 </html>
