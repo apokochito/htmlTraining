@@ -9,8 +9,88 @@
   <body>
     <h3>HTML is not a programming language, it's a markup languange</h3>
     <hr>
-    <h4>Text: Time, Mark, and “Presentational”</h4>
+    <h4>Embedded Content: Video, Audio, and Canvas</h4>
     <div style="padding-left: 5%;">
+      <h4>Example : Video</h4>
+      <video src="kitties.mp4" controls></video>
+      <video src="kitties.mp4" autoplay></video>
+      <video src="kitties.mp4" muted></video>
+      <video src="kitties.mp4" width="300" height="200" loop muted autoplay controls></video>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;video src="kitties.mp4" controls&gt;&lt;/video&gt;
+        &lt;video src="kitties.mp4" autoplay&gt;&lt;/video&gt;
+        &lt;video src="kitties.mp4" muted&gt;&lt;/video&gt;
+        &lt;video src="kitties.mp4" width="300" height="200" loop muted autoplay controls&gt;&lt;/video&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>This will embed a video, complete with controls, in browsers that support the HTML5 video tag and the video content type.</p>
+
+      <h4>Example : Poster</h4>
+      <video src="kitties.mp4" poster="statics/img.jpg" controls></video>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;video src="kitties.mp4" poster="statics/img.jpg" controls&gt;&lt;/video&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>You can specify a placeholder image, which will be displayed before the video is played, with the poster attribute.</p>
+
+      <h4>Example : Fall-back content</h4>
+      <video src="kitties.mp4" controls>
+        <img src="hahahaha.jpg" alt="Hilarious cat and caption saying 'soz'.">
+      </video>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;video src="kitties.mp4" controls&gt;
+          &lt;img src="hahahaha.jpg" alt="Hilarious cat and caption saying 'soz'."&gt;
+        &lt;/video&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>Content that is displayed if the browser doesn’t understand the video element. That could be a few words, a chunk of HTML, or a “really funny” and “highly original” Lolcats image.</p>
+
+      <h4>Example : Alternative content</h4>
+      <video controls>
+        <source src="kitties.mp4" type="video/mp4; codecs='avc1, mp4a'">
+        <source src="kitties.webm" type="video/webm; codecs='vp8.0, vorbis'">
+        <p>Browser no likey HTML 5.</p>
+      </video>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;video controls&gt;
+          &lt;source src="kitties.mp4" type="video/mp4; codecs='avc1, mp4a'"&gt;
+          &lt;source src="kitties.webm" type="video/webm; codecs='vp8.0, vorbis'"&gt;
+          &lt;p&gt;Browser no likey HTML 5.&lt;/p&gt;
+        &lt;/video&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>It’s not only compatibility with the tag we need to worry about, but also compatibility with the source video itself.</p>
+      <p>Here, a browser should figure out if it can handle the “video/mp4” MIME type and if it has the stated codec to decipher it. If it doesn’t, it should move on to the next and try again with the details set out in the second source element.</p>
+
+      <h4>Example : Audio</h4>
+      <audio src="meow_mix.mp3" controls>
+        Your stupid browser doesn't support HTML 5 audio.
+      </audio>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;audio src="meow_mix.mp3" controls&gt;
+          Your stupid browser doesn't support HTML 5 audio.
+        &lt;/audio&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>Using the audio tag, the structure is the same as using video and the attributes src, controls, autoplay and loop can all be used in the same way.</p>
+      <p>Much greater control can be exercised over video and audio using JavaScript, with the ability to manipulate aspects of playback and user controls in more detail.</p>
+
+      <h4>Example : Canvas</h4>
+      <canvas id="wittykitty" width="800" height="450">
+        <!-- Fall-back content here, just like with video and audio -->
+      </canvas>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;canvas id="wittykitty" width="800" height="450"&gt;
+        &lt;/canvas&gt;
+      </pre>
+      <h4>Description</h4>
+      <p> It is designed to provide a canvas onto which JavaScript can be used to paint all manner of dynamic images such as graphs, animated sprites, or daft cat pictures.</p>
     </div>
   </body>
 </html>
