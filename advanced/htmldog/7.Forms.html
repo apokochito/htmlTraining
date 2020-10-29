@@ -11,6 +11,48 @@
     <hr>
     <h4>HTML5 Forms Pt. 2: Attributes and Data Lists</h4>
     <div style="padding-left: 5%;">
+      <h4>Example : Placeholder text</h4>
+      <label for="email_address">Email address</label>
+      <input type="email" placeholder="you@somewhere.com" name="email_address" id="email_address">
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;label for="email_address"&gt; Email address &lt;/label&gt;
+        &lt;input type="email" placeholder="you@somewhere.com" name="email_address" id="email_address"&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>It is intended as a hint, rather than a label, for which a label element should still be used.</p>
+
+      <h4>Example : Autofocus</h4>
+      <input name="query" autofocus>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;input name="query" autofocus&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>When you land on its home page you don't normally need to click on the search box to start typing - you can do so straight away because it already has focus.</p>
+
+      <h4>Example : Data lists</h4>
+      <input name="country" list="country_name">
+      <datalist id="country_name">
+        <option value="Afghanistan">
+        <option value="Australia">
+        <option value="Austria">
+        <option value="Azerbaijan">
+        <!-- etc. -->
+      </datalist>
+      <h4>HTML Code</h4>
+      <pre>
+        &lt;input name="country" list="country_name"&gt;
+        &lt;datalist id="country_name"&gt;
+          &lt;option value="Afghanistan"&gt;
+          &lt;option value="Australia"&gt;
+          &lt;option value="Austria"&gt;
+          &lt;option value="Azerbaijan"&gt;
+        &lt;/datalist&gt;
+      </pre>
+      <h4>Description</h4>
+      <p>The value of the list attribute in the input element binds it to a datalist element with the corresponding ID.</p>
+      <p>As a user types in the text field, if what they type matches the start of anything in the data list, those matches will be shown underneath the text field as suggestions.</p>
     </div>
   </body>
 </html>
